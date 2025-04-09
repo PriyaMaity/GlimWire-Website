@@ -1,6 +1,6 @@
 # 💎 GLIMWIRE - Liked Products Showcase
 
-🔗 **Website:** [glimwire.vercel.app]([https://glim-wire-website-git-main-priyamaitys-projects.vercel.app/])  
+🔗 **Website:** [glimwire.vercel.app](https://glim-wire-website-git-main-priyamaitys-projects.vercel.app/)
 
 Welcome to **GLIMWIRE**, a sleek and interactive front-end interface where users can explore, like, and manage their favorite products. Built with **HTML**, **CSS**, and **JavaScript**, this UI fetches real-time product data from the [Fake Store API](https://fakestoreapi.com/) and offers features like login/signup, filters, dark mode, and more.
 
