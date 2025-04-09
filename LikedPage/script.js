@@ -1,3 +1,7 @@
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  window.location.href = "../index.html";
+}
+
 let allProducts = [];
 
 async function fetchProducts() {

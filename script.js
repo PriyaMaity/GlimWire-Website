@@ -1,3 +1,8 @@
+const isLoggedIn = localStorage.getItem("isLoggedIn");
+if (isLoggedIn === "true") {
+  window.location.href = "./MainPage/index.html";
+}
+
 document.getElementById("login-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -18,6 +23,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
   }
 
   if (storedUser.email === email && storedUser.password === password) {
+    localStorage.setItem("isLoggedIn", "true");
     Swal.fire({
       title: "Login Successful!",
       text: "Welcome back!",
