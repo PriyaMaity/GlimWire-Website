@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url("../Images/bg-img3.avif") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 3%;
+  padding-bottom: 10%;
+}
+
+.login-form,
+.signup-form {
+  background-color: rgba(255, 255, 255, 0.2); /* transparent glass effect */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* glass blur effect */
+  width: 400px;
+  color: #000;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-form h2,
+.signup-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.login-form input,
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form button,
+.signup-form button {
+  width: 50%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #ff3399;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-form .login,
+.signup-form .signup {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-form .login a,
+.signup-form .signup a {
+  color: #ff3399;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .login-form,
+  .signup-form {
+    width: 45%;
+    padding: 30px;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .login-form,
+  .signup-form {
+    width: 90%;
+    /* padding: 20px; */
+  }
+
+  .login-form h2,
+  .signup-form h2 {
+    font-size: 20px;
+  }
+
+  .login-form button,
+  .signup-form button {
+    width: 40%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .login-form input,
+  .signup-form input {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLIMWIRE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">🛒 <span>GLIMWIRE</span></div>
+      <div class="logo">❤️ <span>Liked Items</span></div>
+      <div class="nav-actions">
+        <button id="homeBtn">🏠 Home</button>
+        <button id="darkToggle">🌙</button>
+      </div>
+    </nav>
+
+    <!-- Products Container -->
+    <div id="products" class="product-grid liked-page"></div>
+
+    <div id="productOverlay" class="overlay hidden">
+      <div class="overlay-content">
+        <span id="closeOverlay" class="close-btn">×</span>
+        <img id="overlayImg" src="" alt="Product Image" />
+        <h2 id="overlayTitle"></h2>
+        <p><strong>Category:</strong> <span id="overlayCategory"></span></p>
+        <p><strong>Price:</strong> $<span id="overlayPrice"></span></p>
+        <p id="overlayDesc"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

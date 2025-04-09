@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GLIMWIRE</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">🛒 <span>GLIMWIRE</span></div>
+      
+      <div class="search-filters">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <input type="number" id="minPrice" placeholder="Min Price" />
+        <input type="number" id="maxPrice" placeholder="Max Price" />
+      </div>
+
+      <div class="nav-actions">
+        <button id="likedBtn">❤️ Liked</button>
+        <button id="darkToggle">🌙</button>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </nav>
+
+    <div class="main">
+      <!-- Filters -->
+      <aside class="filters">
+        <h3>Filters</h3>
+        <label
+          ><input type="checkbox" class="category-filter" value="electronics" />
+          Electronics</label
+        ><br />
+        <label
+          ><input type="checkbox" class="category-filter" value="jewelery" />
+          Jewelry</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            class="category-filter"
+            value="men's clothing"
+          />
+          Men’s Clothing</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            class="category-filter"
+            value="women's clothing"
+          />
+          Women’s Clothing</label
+        >
+      </aside>
+
+      <!-- Products Grid -->
+      <div id="products" class="product-grid"></div>
+
+      <div id="productOverlay" class="overlay hidden">
+        <div class="overlay-content">
+          <span id="closeOverlay" class="close-btn">×</span>
+          <img id="overlayImg" src="" alt="Product Image" />
+          <h2 id="overlayTitle"></h2>
+          <p><strong>Category:</strong> <span id="overlayCategory"></span></p>
+          <p><strong>Price:</strong> $<span id="overlayPrice"></span></p>
+          <p id="overlayDesc"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
